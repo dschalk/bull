@@ -111,8 +111,9 @@ let data = mobservable.makeReactive({
   q: 0,
   q2: 0,
   x: 1,
-  test: true,
-  groupWatch: function() {
+  test: true
+});
+data.groupWatch = function() {
     if (this.group === 'GroupA' && this.test) {
       mouseHandler.Abackground = 'green';
       mouseHandler.Aborder = 'lawngreen';
@@ -183,8 +184,7 @@ let data = mobservable.makeReactive({
       mouseHandler.Sborder = 'green';
       mouseHandler.Scolor = 'burlywood';
     }
-  }
-});
+};
 
 @reactiveComponent class B2 extends React.Component {
   constructor(props) {
