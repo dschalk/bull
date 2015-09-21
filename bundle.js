@@ -211,76 +211,77 @@
 	  q: 0,
 	  q2: 0,
 	  x: 1,
-	  test: true,
-	  groupWatch: function groupWatch() {
-	    if (this.group === 'GroupA' && this.test) {
-	      mouseHandler.Abackground = 'green';
-	      mouseHandler.Aborder = 'lawngreen';
-	      mouseHandler.Acolor = 'yellow';
-	      mouseHandler.Bbackground = '#000';
-	      mouseHandler.Bborder = 'green';
-	      mouseHandler.Bcolor = 'burlywood';
-	      mouseHandler.Cbackground = '#000';
-	      mouseHandler.Cborder = 'green';
-	      mouseHandler.Ccolor = 'burlywood';
-	      mouseHandler.Sbackground = '#000';
-	      mouseHandler.Sborder = 'green';
-	      mouseHandler.Scolor = 'burlywood';
-	    } else if (this.group === 'GroupB' && this.test) {
-	      mouseHandler.Bbackground = 'green';
-	      mouseHandler.Bborder = 'lawngreen';
-	      mouseHandler.Bcolor = 'yellow';
-	      mouseHandler.Abackground = '#000';
-	      mouseHandler.Aborder = 'green';
-	      mouseHandler.Acolor = 'burlywood';
-	      mouseHandler.Cbackground = '#000';
-	      mouseHandler.Cborder = 'green';
-	      mouseHandler.Ccolor = 'burlywood';
-	      mouseHandler.Sbackground = '#000';
-	      mouseHandler.Sborder = 'green';
-	      mouseHandler.Scolor = 'burlywood';
-	    } else if (this.group === 'GroupC' && this.test) {
-	      mouseHandler.Cbackground = 'green';
-	      mouseHandler.Cborder = 'lawngreen';
-	      mouseHandler.Ccolor = 'yellow';
-	      mouseHandler.Abackground = '#000';
-	      mouseHandler.Aborder = 'green';
-	      mouseHandler.Acolor = 'burlywood';
-	      mouseHandler.Bbackground = '#000';
-	      mouseHandler.Bborder = 'green';
-	      mouseHandler.Bcolor = 'burlywood';
-	      mouseHandler.Sbackground = '#000';
-	      mouseHandler.Sborder = 'green';
-	      mouseHandler.Scolor = 'burlywood';
-	    } else if (this.group === 'solo' && this.test) {
-	      mouseHandler.Sbackground = 'green';
-	      mouseHandler.Sborder = 'lawngreen';
-	      mouseHandler.Scolor = 'yellow';
-	      mouseHandler.Abackground = '#000';
-	      mouseHandler.Aborder = 'green';
-	      mouseHandler.Acolor = 'burlywood';
-	      mouseHandler.Bbackground = '#000';
-	      mouseHandler.Bborder = 'green';
-	      mouseHandler.Bcolor = 'burlywood';
-	      mouseHandler.Cbackground = '#000';
-	      mouseHandler.Cborder = 'green';
-	      mouseHandler.Ccolor = 'burlywood';
-	    } else if (this.test) {
-	      mouseHandler.Abackground = '#000';
-	      mouseHandler.Aborder = 'green';
-	      mouseHandler.Acolor = 'burlywood';
-	      mouseHandler.Bbackground = '#000';
-	      mouseHandler.Bborder = 'green';
-	      mouseHandler.Bcolor = 'burlywood';
-	      mouseHandler.Cbackground = '#000';
-	      mouseHandler.Cborder = 'green';
-	      mouseHandler.Ccolor = 'burlywood';
-	      mouseHandler.Sbackground = '#000';
-	      mouseHandler.Sborder = 'green';
-	      mouseHandler.Scolor = 'burlywood';
-	    }
-	  }
+	  test: true
 	});
+
+	data.groupWatch = function () {
+	  if (this.group === 'GroupA' && this.test) {
+	    mouseHandler.Abackground = 'green';
+	    mouseHandler.Aborder = 'lawngreen';
+	    mouseHandler.Acolor = 'yellow';
+	    mouseHandler.Bbackground = '#000';
+	    mouseHandler.Bborder = 'green';
+	    mouseHandler.Bcolor = 'burlywood';
+	    mouseHandler.Cbackground = '#000';
+	    mouseHandler.Cborder = 'green';
+	    mouseHandler.Ccolor = 'burlywood';
+	    mouseHandler.Sbackground = '#000';
+	    mouseHandler.Sborder = 'green';
+	    mouseHandler.Scolor = 'burlywood';
+	  } else if (this.group === 'GroupB' && this.test) {
+	    mouseHandler.Bbackground = 'green';
+	    mouseHandler.Bborder = 'lawngreen';
+	    mouseHandler.Bcolor = 'yellow';
+	    mouseHandler.Abackground = '#000';
+	    mouseHandler.Aborder = 'green';
+	    mouseHandler.Acolor = 'burlywood';
+	    mouseHandler.Cbackground = '#000';
+	    mouseHandler.Cborder = 'green';
+	    mouseHandler.Ccolor = 'burlywood';
+	    mouseHandler.Sbackground = '#000';
+	    mouseHandler.Sborder = 'green';
+	    mouseHandler.Scolor = 'burlywood';
+	  } else if (this.group === 'GroupC' && this.test) {
+	    mouseHandler.Cbackground = 'green';
+	    mouseHandler.Cborder = 'lawngreen';
+	    mouseHandler.Ccolor = 'yellow';
+	    mouseHandler.Abackground = '#000';
+	    mouseHandler.Aborder = 'green';
+	    mouseHandler.Acolor = 'burlywood';
+	    mouseHandler.Bbackground = '#000';
+	    mouseHandler.Bborder = 'green';
+	    mouseHandler.Bcolor = 'burlywood';
+	    mouseHandler.Sbackground = '#000';
+	    mouseHandler.Sborder = 'green';
+	    mouseHandler.Scolor = 'burlywood';
+	  } else if (this.group === 'solo' && this.test) {
+	    mouseHandler.Sbackground = 'green';
+	    mouseHandler.Sborder = 'lawngreen';
+	    mouseHandler.Scolor = 'yellow';
+	    mouseHandler.Abackground = '#000';
+	    mouseHandler.Aborder = 'green';
+	    mouseHandler.Acolor = 'burlywood';
+	    mouseHandler.Bbackground = '#000';
+	    mouseHandler.Bborder = 'green';
+	    mouseHandler.Bcolor = 'burlywood';
+	    mouseHandler.Cbackground = '#000';
+	    mouseHandler.Cborder = 'green';
+	    mouseHandler.Ccolor = 'burlywood';
+	  } else if (this.test) {
+	    mouseHandler.Abackground = '#000';
+	    mouseHandler.Aborder = 'green';
+	    mouseHandler.Acolor = 'burlywood';
+	    mouseHandler.Bbackground = '#000';
+	    mouseHandler.Bborder = 'green';
+	    mouseHandler.Bcolor = 'burlywood';
+	    mouseHandler.Cbackground = '#000';
+	    mouseHandler.Cborder = 'green';
+	    mouseHandler.Ccolor = 'burlywood';
+	    mouseHandler.Sbackground = '#000';
+	    mouseHandler.Sborder = 'green';
+	    mouseHandler.Scolor = 'burlywood';
+	  }
+	};
 
 	var B2 = (function (_React$Component2) {
 	  _inherits(B2, _React$Component2);
@@ -22240,7 +22241,7 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	!function(e,t){ true?module.exports=t(__webpack_require__(158),__webpack_require__(2)):"function"==typeof define&&define.amd?define(["mobservable","react"],t):"object"==typeof exports?exports.mobservableReact=t(require("mobservable"),require("react")):e.mobservableReact=t(e.mobservable,e.react)}(this,function(e,t){return function(e){function t(o){if(n[o])return n[o].exports;var r=n[o]={exports:{},id:o,loaded:!1};return e[o].call(r.exports,r,r.exports,t),r.loaded=!0,r.exports}var n={};return t.m=e,t.c=n,t.p="",t(0)}([function(e,t,n){var o,r,i;!function(){function s(e,t){function n(e){var n=t.findDOMNode(e);n&&c.set(n,e),u.emit({event:"render",renderTime:e.__renderEnd-e.__renderStart,totalTime:Date.now()-e.__renderStart,component:e,node:n})}function o(e,t){var n=e[t],o=d[t];e[t]=function(){n&&n.apply(this,arguments),o.apply(this,arguments)}}function r(e){if(!e)throw new Error("Please pass a valid component to 'reactiveComponent'");var t=e.prototype||e;return["componentWillMount","componentWillUnmount","componentDidMount","componentDidUpdate"].forEach(function(e){o(t,e)}),t.shouldComponentUpdate||(t.shouldComponentUpdate=d.shouldComponentUpdate),e}function i(){if("undefined"==typeof WeakMap)throw new Error("tracking components is not supported in this browser");a||(a=!0)}var s=1,a=!1,p=e.observeUntilInvalid,c="undefined"!=typeof WeakMap?new WeakMap:void 0,u=new e._.SimpleEventEmitter,d={componentWillMount:function(){var e=(this.displayName||this.constructor.name||"ReactiveComponent")+s++,n=this.render;this.render=function(){var o=this;a&&(this.__renderStart=Date.now()),this.__watchDisposer&&this.__watchDisposer();var r=p(function(){return n.call(o)},function(){t.Component.prototype.forceUpdate.call(o)},{object:this,name:e});return this.__watchDisposer=r[1],this.$mobservable=r[2],a&&(this.__renderEnd=Date.now()),r[0]}},componentWillUnmount:function(){if(this.__watchDisposer&&this.__watchDisposer(),delete this.$mobservable,a){var e=t.findDOMNode(this);e&&(c.delete(e),u.emit({event:"destroy",component:this,node:e}))}},componentDidMount:function(){a&&n(this)},componentDidUpdate:function(){a&&n(this)},shouldComponentUpdate:function(e,t){if(this.state!==t)return!0;var n,o=Object.keys(this.props);if(o.length!==Object.keys(e).length)return!0;for(var r=o.length-1;n=o[r];r--)if(e[n]!==this.props[n])return!0;return!1}};return{reactiveComponent:r,renderReporter:u,componentByNodeRegistery:c,trackComponents:i}}r=[n(1),n(2)],o=s,i="function"==typeof o?o.apply(t,r):o,!(void 0!==i&&(e.exports=i))}()},function(t,n){t.exports=e},function(e,n){e.exports=t}])});
+	!function(e,t){ true?module.exports=t(__webpack_require__(158),__webpack_require__(2)):"function"==typeof define&&define.amd?define(["mobservable","react"],t):"object"==typeof exports?exports.mobservableReact=t(require("mobservable"),require("react")):e.mobservableReact=t(e.mobservable,e.React)}(this,function(e,t){return function(e){function t(n){if(o[n])return o[n].exports;var r=o[n]={exports:{},id:n,loaded:!1};return e[n].call(r.exports,r,r.exports,t),r.loaded=!0,r.exports}var o={};return t.m=e,t.c=o,t.p="",t(0)}([function(e,t,o){var n,r,i;!function(){function s(e,t){function o(e){var o=t.findDOMNode(e);o&&p.set(o,e),a.emit({event:"render",renderTime:e.__$mobRenderEnd-e.__$mobRenderStart,totalTime:Date.now()-e.__$mobRenderStart,component:e,node:o})}function n(e,t){var o=e[t],n=c[t];e[t]=function(){o&&o.apply(this,arguments),n.apply(this,arguments)}}function r(e){if("function"==typeof e&&!e.prototype.render&&!e.isReactClass&&!t.Component.isPrototypeOf(e))return r(t.createClass({displayName:e.name,render:function(){return e.call(this,this.props)}}));if(!e)throw new Error("Please pass a valid component to 'reactiveComponent'");var o=e.prototype||e;return["componentWillMount","componentWillUnmount","componentDidMount","componentDidUpdate"].forEach(function(e){n(o,e)}),o.shouldComponentUpdate||(o.shouldComponentUpdate=c.shouldComponentUpdate),e}function i(){if("undefined"==typeof WeakMap)throw new Error("tracking components is not supported in this browser");s||(s=!0)}var s=!1,p="undefined"!=typeof WeakMap?new WeakMap:void 0,a=new e._.SimpleEventEmitter,c={componentWillMount:function(){var o=this.render;this.__$mobDependencies=[],this.render=function(){s&&(this.__$mobRenderStart=Date.now());var n,r=!1;this.__$mobDisposer=e.observe(function(){r?(this.__$mobDisposer(),t.Component.prototype.forceUpdate.call(this)):(r=!0,n=o.call(this))},this),this.$mobservable=this.__$mobDisposer.$mobservable;var i=this.$mobservable.observing.map(function(e){return e.setRefCount(1),e});return this.__$mobDependencies.forEach(function(e){e.setRefCount(-1)}),this.__$mobDependencies=i,s&&(this.__$mobRenderEnd=Date.now()),n}},componentWillUnmount:function(){if(this.__$mobDisposer&&this.__$mobDisposer(),this.__$mobDependencies.forEach(function(e){e.setRefCount(-1)}),delete this.$mobservable,s){var e=t.findDOMNode(this);e&&(p.delete(e),a.emit({event:"destroy",component:this,node:e}))}},componentDidMount:function(){s&&o(this)},componentDidUpdate:function(){s&&o(this)},shouldComponentUpdate:function(t,o){if(this.state!==o)return!0;var n,r=Object.keys(this.props);if(r.length!==Object.keys(t).length)return!0;for(var i=r.length-1;n=r[i];i--){var s=t[n];if(s!==this.props[n])return!0;if(s&&"object"==typeof s&&!e.isReactive(s))return!0}return!1}};return{reactiveComponent:r,renderReporter:a,componentByNodeRegistery:p,trackComponents:i}}r=[o(1),o(2)],n=s,i="function"==typeof n?n.apply(t,r):n,!(void 0!==i&&(e.exports=i))}()},function(t,o){t.exports=e},function(e,o){e.exports=t}])});
 
 /***/ },
 /* 160 */
