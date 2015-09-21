@@ -386,7 +386,7 @@ let data = mobservable.makeReactive({
               if (group !== 'solo') {
                   this.data.test = false;
                   this.mouse.Sbackground = rSbackground;
-                  this.mouse.Sborder  = rSborder;n
+                  this.mouse.Sborder  = rSborder;
                   this.mouse.Scolor = rScolor;
                 }
               }

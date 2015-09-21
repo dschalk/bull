@@ -500,7 +500,7 @@
 	                if (group !== 'solo') {
 	                  _this2.data.test = false;
 	                  _this2.mouse.Sbackground = rSbackground;
-	                  _this2.mouse.Sborder = rSborder;n;
+	                  _this2.mouse.Sborder = rSborder;
 	                  _this2.mouse.Scolor = rScolor;
 	                }
 	              },
@@ -21093,8 +21093,6 @@
 	                }
 	                var _a = _.quickDiff(this.observing, this.prevObserving), added = _a[0], removed = _a[1];
 	                this.prevObserving = null;
-	                for (var i = 0, l = removed.length; i < l; i++)
-	                    removed[i].removeObserver(this);
 	                this.hasCycle = false;
 	                for (var i = 0, l = added.length; i < l; i++) {
 	                    var dependency = added[i];
@@ -21107,6 +21105,8 @@
 	                        added[i].addObserver(this);
 	                    }
 	                }
+	                for (var i = 0, l = removed.length; i < l; i++)
+	                    removed[i].removeObserver(this);
 	            };
 	            ViewNode.prototype.findCycle = function (node) {
 	                var obs = this.observing;
@@ -21187,6 +21187,10 @@
 	    }
 	    mobservable.isReactive = isReactive;
 	    function sideEffect(func, scope) {
+	        return observe(func, scope);
+	    }
+	    mobservable.sideEffect = sideEffect;
+	    function observe(func, scope) {
 	        var observable = new _.ObservableView(func, scope, {
 	            object: scope,
 	            name: func.name
@@ -21200,7 +21204,17 @@
 	        disposer.$mobservable = observable;
 	        return disposer;
 	    }
-	    mobservable.sideEffect = sideEffect;
+	    mobservable.observe = observe;
+	    function when(predicate, effect, scope) {
+	        var disposer = observe(function () {
+	            if (predicate.call(scope)) {
+	                disposer();
+	                effect.call(scope);
+	            }
+	        });
+	        return disposer;
+	    }
+	    mobservable.when = when;
 	    function extendReactive(target, properties, context) {
 	        return _.extendReactive(target, properties, true, context);
 	    }
