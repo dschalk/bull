@@ -303,7 +303,6 @@
 	      var increaseX = _this2.data.increaseX;
 	      var increaseW = _this2.data.increaseW;
 	      var group = _this2.data.group;
-	      var groupWatch = _this2.data.groupWatch;
 	      var Abackground = '#000';
 	      var Aborder = 'green';
 	      var Acolor = 'burlywood';
@@ -399,6 +398,7 @@
 	            { onClick: function () {
 	                _this2.data.group = 'GroupA';
 	                _this2.data.test = true;
+	                _this2.data.groupWatch();
 	              },
 	              onMouseEnter: function () {
 	                if (group !== 'GroupA') {
@@ -406,6 +406,7 @@
 	                  _this2.mouse.Abackground = rAbackground;
 	                  _this2.mouse.Aborder = rAborder;
 	                  _this2.mouse.Acolor = rAcolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              onMouseLeave: function () {
@@ -414,6 +415,7 @@
 	                  _this2.mouse.Abackground = Abackground;
 	                  _this2.mouse.Aborder = Aborder;
 	                  _this2.mouse.Acolor = Acolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              style: _this2.style8(_this2.mouse.Abackground, _this2.mouse.Aborder, _this2.mouse.Acolor) },
@@ -424,6 +426,7 @@
 	            { onClick: function () {
 	                _this2.data.group = 'GroupB';
 	                _this2.data.test = true;
+	                _this2.data.groupWatch();
 	              },
 	              onMouseEnter: function () {
 	                if (group !== 'GroupB') {
@@ -431,6 +434,7 @@
 	                  _this2.mouse.Bbackground = rBbackground;
 	                  _this2.mouse.Bborder = rBborder;
 	                  _this2.mouse.Ncolor = rBcolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              onMouseLeave: function () {
@@ -439,6 +443,7 @@
 	                  _this2.mouse.Bbackground = Bbackground;
 	                  _this2.mouse.Bborder = Bborder;
 	                  _this2.mouse.Bcolor = Bcolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              style: _this2.style8(_this2.mouse.Bbackground, _this2.mouse.Bborder, _this2.mouse.Bcolor) },
@@ -449,6 +454,7 @@
 	            { onClick: function () {
 	                _this2.data.group = 'GroupC';
 	                _this2.data.test = true;
+	                _this2.data.groupWatch();
 	              },
 	              onMouseEnter: function () {
 	                if (group !== 'GroupC') {
@@ -456,6 +462,7 @@
 	                  _this2.mouse.Cbackground = rCbackground;
 	                  _this2.mouse.Cborder = rCborder;
 	                  _this2.mouse.Ccolor = rCcolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              onMouseLeave: function () {
@@ -464,6 +471,7 @@
 	                  _this2.mouse.Cbackground = Cbackground;
 	                  _this2.mouse.Cborder = Cborder;
 	                  _this2.mouse.Ccolor = Ccolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              style: _this2.style8(_this2.mouse.Cbackground, _this2.mouse.Cborder, _this2.mouse.Ccolor) },
@@ -474,6 +482,7 @@
 	            { onClick: function () {
 	                _this2.data.group = 'solo';
 	                _this2.data.test = true;
+	                _this2.data.groupWatch();
 	              },
 	              onMouseEnter: function () {
 	                if (group !== 'solo') {
@@ -481,6 +490,7 @@
 	                  _this2.mouse.Sbackground = rSbackground;
 	                  _this2.mouse.Sborder = rSborder;
 	                  _this2.mouse.Scolor = rScolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              onMouseLeave: function () {
@@ -489,6 +499,7 @@
 	                  _this2.mouse.Sbackground = Sbackground;
 	                  _this2.mouse.Sborder = Sborder;
 	                  _this2.mouse.Scolor = Scolor;
+	                  _this2.data.groupWatch();
 	                }
 	              },
 	              style: _this2.style8(_this2.mouse.Sbackground, _this2.mouse.Sborder, _this2.mouse.Scolor) },
@@ -497,7 +508,7 @@
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement(GroupNew, { key: 'GroupNew', setGroup: function (x) {
-	              _this2.data.group = x;
+	              _this2.data.group = x;_this2.data.groupWatch();
 	            }, name: _this2.data.name }),
 	          _react2['default'].createElement('br', null),
 	          _react2['default'].createElement('br', null)

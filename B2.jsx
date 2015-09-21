@@ -200,7 +200,6 @@ let data = mobservable.makeReactive({
     let increaseX = this.data.increaseX;
     let increaseW = this.data.increaseW;
     let group = this.data.group;
-    let groupWatch = this.data.groupWatch;
     let Abackground = '#000';
     let Aborder = 'green';
     let Acolor = 'burlywood';
@@ -282,6 +281,7 @@ let data = mobservable.makeReactive({
           <button onClick={() => {
                   this.data.group = 'GroupA';
                   this.data.test = true;
+    this.data.groupWatch();
           }}
             onMouseEnter={() => {
               if (group !== 'GroupA') {
@@ -289,6 +289,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Abackground = rAbackground;
                   this.mouse.Aborder  = rAborder;
                   this.mouse.Acolor = rAcolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -298,6 +299,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Abackground = Abackground;
                   this.mouse.Aborder  = Aborder;
                   this.mouse.Acolor = Acolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -308,6 +310,7 @@ let data = mobservable.makeReactive({
           <button onClick={() => {
                   this.data.group = 'GroupB';
                   this.data.test = true;
+    this.data.groupWatch();
           }}
             onMouseEnter={() => {
               if (group !== 'GroupB') {
@@ -315,6 +318,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Bbackground = rBbackground;
                   this.mouse.Bborder  = rBborder;
                   this.mouse.Ncolor = rBcolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -324,6 +328,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Bbackground = Bbackground;
                   this.mouse.Bborder  = Bborder;
                   this.mouse.Bcolor = Bcolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -334,6 +339,7 @@ let data = mobservable.makeReactive({
           <button onClick={() => {
                   this.data.group = 'GroupC';
                   this.data.test = true;
+    this.data.groupWatch();
           }}
             onMouseEnter={() => {
               if (group !== 'GroupC') {
@@ -341,6 +347,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Cbackground = rCbackground;
                   this.mouse.Cborder  = rCborder;
                   this.mouse.Ccolor = rCcolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -350,6 +357,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Cbackground = Cbackground;
                   this.mouse.Cborder  = Cborder;
                   this.mouse.Ccolor = Ccolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -360,6 +368,7 @@ let data = mobservable.makeReactive({
           <button onClick={() => {
                   this.data.group = 'solo';
                   this.data.test = true;
+    this.data.groupWatch();
           }}
             onMouseEnter={() => {
               if (group !== 'solo') {
@@ -367,6 +376,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Sbackground = rSbackground;
                   this.mouse.Sborder  = rSborder;
                   this.mouse.Scolor = rScolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -376,6 +386,7 @@ let data = mobservable.makeReactive({
                   this.mouse.Sbackground = Sbackground;
                   this.mouse.Sborder  = Sborder;
                   this.mouse.Scolor = Scolor;
+    this.data.groupWatch();
                 }
               }
             }
@@ -383,7 +394,7 @@ let data = mobservable.makeReactive({
             solo
           </button>
           <br /><br />
-          <GroupNew key='GroupNew' setGroup={(x) => {this.data.group = x }} name={this.data.name} />
+          <GroupNew key='GroupNew'  setGroup={(x) => {this.data.group = x; this.data.groupWatch() }} name={this.data.name} />
 <br /><br />
 
   </div>
