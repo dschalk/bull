@@ -200,17 +200,6 @@
 	var data = _mobservable2['default'].makeReactive({
 	  group: 'solo',
 	  name: '',
-	  nx: [1, 1],
-	  n: 1,
-	  w: 1,
-	  dsp: 'inline',
-	  p: 1,
-	  p2: 1,
-	  t: 0,
-	  t2: 0,
-	  q: 0,
-	  q2: 0,
-	  x: 1,
 	  test: true
 	});
 
@@ -309,22 +298,12 @@
 
 	    this.render = function () {
 	      console.log(_this2);
-	      var x = _this2.data.x;
-	      var g = _this2.data.g;
-	      var p = _this2.data.p;
-	      var q = _this2.data.q;
-	      var p2 = _this2.data.p2;
-	      var q2 = _this2.data.q2;
-	      var t = _this2.data.t;
-	      var t2 = _this2.data.t2;
-	      var w = _this2.data.w;
 	      var warning = _this2.data.warning;
 	      var message = _this2.data.message;
 	      var increaseX = _this2.data.increaseX;
 	      var increaseW = _this2.data.increaseW;
 	      var group = _this2.data.group;
 	      var groupWatch = _this2.data.groupWatch;
-	      var dsp = _this2.data.dsp;
 	      var Abackground = '#000';
 	      var Aborder = 'green';
 	      var Acolor = 'burlywood';

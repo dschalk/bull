@@ -100,17 +100,6 @@ let mouseHandler = mobservable.makeReactive({
 let data = mobservable.makeReactive({
   group: 'solo',
   name: '',
-  nx: [1,1],
-  n: 1,
-  w: 1,
-  dsp: 'inline',
-  p: 1,
-  p2: 1,
-  t: 0,
-  t2: 0,
-  q: 0,
-  q2: 0,
-  x: 1,
   test: true,
 });
 
@@ -206,22 +195,12 @@ let data = mobservable.makeReactive({
 
   render = () => {
     console.log(this);
-    let x = this.data.x;
-    let g = this.data.g;
-    let p = this.data.p;
-    let q = this.data.q;
-    let p2 = this.data.p2;
-    let q2 = this.data.q2;
-    let t = this.data.t;
-    let t2 = this.data.t2;
-    let w = this.data.w;
     let warning = this.data.warning;
     let message = this.data.message;
     let increaseX = this.data.increaseX;
     let increaseW = this.data.increaseW;
     let group = this.data.group;
     let groupWatch = this.data.groupWatch;
-    let dsp = this.data.dsp;
     let Abackground = '#000';
     let Aborder = 'green';
     let Acolor = 'burlywood';
