@@ -282,10 +282,6 @@
 
 	    _get(Object.getPrototypeOf(_B2.prototype), 'constructor', this).call(this, props);
 
-	    this.setGroup = function (x) {
-	      _this2.data.group = x;
-	    };
-
 	    this.style8 = function (x, y, z) {
 	      return { backgroundColor: x, textAlign: 'left', borderColor: y, outline: 0,
 	        color: z, borderRadius: 10, paddingTop: 1.1, paddingBottom: 0.9, marginRight: 3, marginLeft: 12, fontSize: 20 };
@@ -518,6 +514,7 @@
 
 	    this.mouse = mouseHandler;
 	    this.data = data;
+	    this.data.groupWatch();
 	  }
 
 	  var _B2 = B2;

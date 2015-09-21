@@ -181,11 +181,9 @@ let data = mobservable.makeReactive({
     super(props);
     this.mouse = mouseHandler;
     this.data = data;
+    this.data.groupWatch();
   }
 
-  setGroup = x => {
-    this.data.group = x;
-  }
 
   style8 = (x,y,z) => {return {backgroundColor: x, textAlign: 'left', borderColor: y, outline: 0,
     color: z, borderRadius: 10, paddingTop: 1.1, paddingBottom: 0.9, marginRight: 3, marginLeft: 12, fontSize: 20 }};
